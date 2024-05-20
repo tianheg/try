@@ -1,0 +1,80 @@
+---
+import Layout from "../layouts/Layout.astro";
+import FloatingBox from "../components/SmallBox.astro";
+import { Picture } from "astro:assets";
+import iconImage from "../assets/icon.png";
+import { Config } from "../config";
+
+const years = () => {
+  const start = new Date(Config.me.started);
+  const now = new Date();
+  return now.getFullYear() - start.getFullYear();
+};
+---
+
+<Layout>
+  <main>
+    <div class="flex flex-col gap-20">
+      <article class="md:flex-row-reverse md:justify-end md:gap-12">
+        <div class="flex flex-row justify-between sm:grid-cols-3">
+          <div class="col-span-2 flex flex-col gap-6 md:gap-8 my-auto">
+            <h1 class="text-3xl">Hi, I’m {Config.me.name.split(" ")[0]}</h1>
+            <h2 class="w-auto sm:w-[85%] md:w-[90%] leading-6">
+              I am a <strong class="font-normal text-primary"
+                >{Config.me.job}</strong
+              > with over
+              <strong class="font-normal text-primary">{years} years</strong> of
+              experience. I am currently working with<strong
+                class="font-normal text-primary"
+              >
+                {Config.me.stack}</strong
+              >.
+            </h2>
+          </div>
+          <div class="ml-auto hidden sm:block">
+            <div class="avatar">
+              <div class="w-60 rounded">
+                <Picture
+                  src={iconImage}
+                  formats={["avif", "webp"]}
+                  alt="Profile icon"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex flex-col gap-8">
+        <header class="flex w-full flex-row justify-between gap-2">
+          <h3 class="text-lg">Tried projects</h3>
+          <a
+            href={Config.me.projectLink}
+            class="text-sm text-primary underline decoration-dashed underline-offset-8"
+            target="_self"
+            rel="noreferrer"
+            >See all projects
+          </a>
+        </header>
+        <section
+          class="grid grid-cols-1 gap-4 sm:grid-cols-2 justify-center items-stretch"
+        >
+          {
+            Object.keys(Config.projects.home).map((project) => (
+              <FloatingBox
+                title={project}
+                href={
+                  Config.projects.home[project as keyof typeof Config.projects].url
+                }
+                tags={
+                  Config.projects.home[project as keyof typeof Config.projects].tags
+                }
+              />
+            ))
+          }
+        </section>
+      </article>
+    </div>
+  </main>
+</Layout>

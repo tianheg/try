@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import FloatingBox from "../components/SmallBox.astro";
+import { Config } from "../config";
+---
+
+<Layout>
+  <main>
+    <div class="flex flex-col gap-20">
+      <article class="flex flex-col gap-8">
+        <header class="flex w-full flex-row justify-between gap-2">
+          <h3 class="text-lg">All Tried projects</h3>
+        </header>
+        <section
+          class="grid grid-cols-1 gap-4 sm:grid-cols-2 justify-center items-stretch"
+        >
+          {
+            Object.keys(Config.projects.all).map((project) => (
+              <FloatingBox
+                title={project}
+                href={
+                  Config.projects.all[project as keyof typeof Config.projects].url
+                }
+                tags={
+                  Config.projects.all[project as keyof typeof Config.projects].tags
+                }
+              />
+            ))
+          }
+        </section>
+      </article>
+    </div>
+  </main>
+</Layout>
