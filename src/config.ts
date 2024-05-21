@@ -37,27 +37,19 @@ export const Config: IConfig = {
 	},
 	projects: {
 		home: {
-			"996.ICU": {
-				url: "https://github.com/996icu/996.ICU",
-				tags: ["ccp", "chinese", "overwork", "labor", "996"],
+			"Observable Framework demo": {
+				url: "https://observable-framework-demo-tianheg.vercel.app/",
+				tags: ["data app", "observable"],
 			},
-			Linux: {
-				url: "https://github.com/torvalds/linux",
-				tags: ["c", "kernel", "unix", "os"],
+			"PDF modification": {
+				url: "https://vanilla-tianheg.vercel.app/extract-pdf/",
+				tags: ["PDF", "extract"],
 			},
 		},
 		all: {
-			"996.ICU": {
-				url: "https://github.com/996icu/996.ICU",
-				tags: ["ccp", "chinese", "overwork", "labor", "996"],
-			},
-			Linux: {
-				url: "https://github.com/torvalds/linux",
-				tags: ["c", "kernel", "unix", "os"],
-			},
-			Liux: {
-				url: "https://github.com/torvalds/linux",
-				tags: ["c", "kernel", "unix", "os"],
+			Vanilla: {
+				url: "https://vanilla-tianheg.vercel.app/",
+				tags: ["JavaScript", "CSS", "HTML", "vanilla"],
 			},
 		},
 	},
