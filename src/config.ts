@@ -45,11 +45,27 @@ export const Config: IConfig = {
 				url: "https://vanilla-tianheg.vercel.app/extract-pdf/",
 				tags: ["PDF", "extract"],
 			},
+			Map: {
+				url: "https://map-tianheg.vercel.app/",
+				tags: ["mapbox", "Vite", "map"],
+			},
+			"Fogg Behavior Model": {
+				url: "https://vanilla-tianheg.vercel.app/fogg-behavior-model/",
+				tags: ["from book", "vanilla"],
+			},
 		},
 		all: {
 			Vanilla: {
 				url: "https://vanilla-tianheg.vercel.app/",
 				tags: ["JavaScript", "CSS", "HTML", "vanilla"],
+			},
+			"Learning Tree": {
+				url: "https://learning-tree-tianheg.vercel.app/",
+				tags: [
+					"Next.js",
+					"tree style",
+					"https://blackglory.me/notes/typescript",
+				],
 			},
 		},
 	},
