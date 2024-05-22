@@ -84,6 +84,10 @@ export const Config: IConfig = {
                             "Vue.js",
                             "Pinia"
                         ]
+                    },
+                    "Hacker News": {
+                        url: "https://hn-tianheg.vercel.app/",
+                        tags: [ "Nuxt.js"]
                     }
 		},
 	},
