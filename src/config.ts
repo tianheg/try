@@ -70,6 +70,20 @@ export const Config: IConfig = {
                     "Stable Diffusion XL Lightning": {
                         url: "https://sdxl-lightning-tianheg.vercel.app/",
                         tags: ["Stable Diffusion", "Text to Image"]
+                    },
+                    "Calendar": {
+                        url: "https://calendar-tianheg.vercel.app/",
+                        tags: [
+                            "React.js",
+                            "Radix UI"
+                        ]
+                    },
+                    "Pinia Tasks": {
+                        url: "https://tasks-tianheg.pages.dev/",
+                        tags: [
+                            "Vue.js",
+                            "Pinia"
+                        ]
                     }
 		},
 	},
