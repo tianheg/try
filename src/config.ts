@@ -67,6 +67,10 @@ export const Config: IConfig = {
 					"https://blackglory.me/notes/typescript",
 				],
 			},
+                    "Stable Diffusion XL Lightning": {
+                        url: "https://sdxl-lightning-tianheg.vercel.app/",
+                        tags: ["Stable Diffusion", "Text to Image"]
+                    }
 		},
 	},
 	og: {
