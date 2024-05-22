@@ -88,6 +88,10 @@ export const Config: IConfig = {
                     "Hacker News": {
                         url: "https://hn-tianheg.vercel.app/",
                         tags: [ "Nuxt.js"]
+                    },
+                    "Cloudflare D1 Manager": {
+                        url: "https://cf-d1-manager-tianheg.pages.dev/",
+                        tags: ["Cloudflare", "database"]
                     }
 		},
 	},
