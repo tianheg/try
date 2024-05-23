@@ -92,6 +92,10 @@ export const Config: IConfig = {
                     "Cloudflare D1 Manager": {
                         url: "https://cf-d1-manager-tianheg.pages.dev/",
                         tags: ["Cloudflare", "database"]
+                    },
+                    "ffmpeg.zh_CN": {
+                        url: "https://ffmpeg-tianheg.vercel.app/",
+                        tags: ["ffmpeg", "LLM", "Next.js"]
                     }
 		},
 	},
