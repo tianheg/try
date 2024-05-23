@@ -95,7 +95,7 @@ export const Config: IConfig = {
                     },
                     "ffmpeg.zh_CN": {
                         url: "https://ffmpeg-tianheg.vercel.app/",
-                        tags: ["ffmpeg", "LLM", "Next.js"]
+                        tags: ["ffmpeg", "LLM", "Next.js", "WASM"]
                     }
 		},
 	},
