@@ -96,6 +96,10 @@ export const Config: IConfig = {
                     "ffmpeg.zh_CN": {
                         url: "https://ffmpeg-tianheg.vercel.app/",
                         tags: ["ffmpeg", "LLM", "Next.js", "WASM"]
+                    },
+                    "Brave Search": {
+                        url: "https://brave-search-demo-tianheg.vercel.app/",
+                        tags: ["Brave Search", "API", "Vue.js", "fastify"]
                     }
 		},
 	},
