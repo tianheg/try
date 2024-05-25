@@ -1,11 +1,11 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import FloatingBox from "../components/SmallBox.astro";
 import { Picture } from "astro:assets";
 import iconImage from "../assets/icon.png";
+import FloatingBox from "../components/SmallBox.astro";
 import { Config } from "../config";
+import Layout from "../layouts/Layout.astro";
 
-const years = () => {
+const _years = () => {
   const start = new Date(Config.me.started);
   const now = new Date();
   return now.getFullYear() - start.getFullYear();
@@ -23,7 +23,7 @@ const years = () => {
               I am a <strong class="font-normal text-primary"
                 >{Config.me.job}</strong
               > with over
-              <strong class="font-normal text-primary">{years} years</strong> of
+              <strong class="font-normal text-primary">{_years} years</strong> of
               experience. I am currently working with<strong
                 class="font-normal text-primary"
               >
