@@ -106,6 +106,13 @@ export const Config: IConfig = {
           "react-wrap-balancer",
         ],
       },
+        "Pinia Tasks": {
+            url: "https://tasks-tianheg.pages.dev/",
+            tags: [
+                "Vue.js",
+                "Pinia"
+                            ]
+        }
     },
   },
   og: {
