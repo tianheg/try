@@ -112,6 +112,10 @@ export const Config: IConfig = {
                 "Vue.js",
                 "Pinia"
                             ]
+        },
+        "hono demo": {
+            url: "https://homo-demo.tianheg.workers.dev",
+            tags: [ "Hono"]
         }
     },
   },
