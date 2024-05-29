@@ -93,7 +93,11 @@ export const Config: IConfig = {
 			},
 			"Brave Search": {
 				url: "https://brave-search-demo-tianheg.vercel.app/",
-				tags: ["Brave Search", "API", "Vue.js", "fastify"],
+				tags: ["Search", "Brave Search", "API", "Vue.js", "fastify"],
+			},
+			"Exa.ai Search": {
+				url: "https://exa-ai-search-demo-theg.vercel.app/",
+				tags: ["Search", "Exa.ai Search", "API"],
 			},
 			"Moodist 环境音": {
 				url: "https://moodist-tianheg.vercel.app/",
